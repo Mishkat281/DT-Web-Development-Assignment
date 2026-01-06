@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepThought Header</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="sdlms-header-section">
+    <div class="sdlms-header d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a href="#" class="main-logo">
+        <span class="logo-deep">
+          <img src="https://sdlms.deepthought.education/assets/uploads/files/system/site-logo.svg" alt="DeepThought"
+            onerror="this.onerror=null;this.src='https://blog.deepthought.education/wp-content/uploads/2022/04/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg';" />
+        </span>
+      </a>
+
+      <!-- Right Icons + Profile -->
+      <div class="icons dropdown">
+        <!-- Home -->
+        <a title="Home" href="#" class="fas fa-home component-1-icon bg-blue">
+          <span class="sr-only">Home</span>
+        </a>
+
+        <!-- Tools -->
+        <a title="Edit profile" href="/user/mishkat/edit" class="fas fa-tools component-1-icon bg-blue">
+          <span class="sr-only">Edit profile</span>
+        </a>
+
+        <!-- Bell -->
+        <a title="Notifications" href="/notifications" class="fa fa-bell component-1-icon bg-blue">
+          <span class="sr-only">Notifications</span>
+        </a>
+
+        <!-- Profile Image -->
+        <a title="View profile" href="/user/mishkat" class="user mr-2">
+          <img class="header-profile-picture"
+            src="https://blog.deepthought.education/wp-content/uploads/2022/04/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg"
+            onerror="this.onerror=null;this.src='https://blog.deepthought.education/wp-content/uploads/2022/04/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg';" />
+        </a>
+
+        <!-- Ellipsis Dropdown -->
+        <a href="#" class="fas fa-ellipsis-v ellipsis" id="dropdownMenuButton">
+        </a>
+        <!-- Dropdown Menu (hidden by default) -->
+        <div class="dropdown-menu">
+          <!-- Other dropdown items... -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Journey Board Sidebar -->
+  <div class="step-container" id="sidebar">
+    <!-- Header -->
+    <div class="step-header">
+      <span class="header-title">Journey Board</span>
+      <div class="arrow" id="toggleBtn">
+        <img src="images/left arrow.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="step-body">
+      <!-- Collapsed View -->
+      <div class="step-number" id="stepNumber">1</div>
+
+      <!-- Expanded View -->
+      <div class="sidebar-content">
+        <ul>
+          <li>Explore the world of management</li>
+          <li>Technical Project Management</li>
+          <li>Threadbuild</li>
+          <li>Structure your pointers</li>
+          <li>4SA Method</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notice Board -->
+  <div class="notice-board">
+    <div class="notice-close">✕</div>
+    <div class="notice-text">
+      <span>N</span>
+      <span>o</span>
+      <span>t</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+
+      <span class="gap"></span>
+
+      <span>B</span>
+      <span>o</span>
+      <span>a</span>
+      <span>r</span>
+      <span>d</span>
+    </div>
+  </div>
+
+  <!-- MAIN  -->
+  <div class="container">
+    <!-- JOURNEY DESCRIPTION -->
+    <div class="journey-container">
+      <div class="journey-card">
+        <h2 class="journey-title">Technical Project Management</h2>
+        <button class="submit-btn">Submit Task</button>
+      </div>
+
+      <div class="journey-desc">
+        <div class="journey-para">
+          <p class="journey-para1">Explore the world of management</p>
+          <br />
+          <p class="journey-para2">
+            As a project manager, you play an important role in leading a
+            project through initiation, planning, execution, monitoring,
+            controlling and completion. How? Do you want to manage each and
+            every step of your life?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <!-- FIRST SECTION -->
+      <div class="Section1-container" id="section1-dynamic"></div>
+      <!-- SECOND SECTION -->
+      <div class="Section2-container" id="section2-dynamic"></div>
+
+    </div>
+
+    <div class="main-container2">
+      <!-- THIRD SECTION -->
+      <div class="Section3-container" id="section3-dynamic"></div>
+
+      <!-- FOURTH SECTION  -->
+      <div class="Section4-container" id="section4-dynamic"></div>
+      <!-- BUTTONS -->
+      <div class="button-container">
+        <button class="floating-btn" aria-label="Help">
+          <i class="fa-solid fa-question"></i>
+        </button>
+
+        <button class="floating-btn" aria-label="Table">
+          <i class="fa-solid fa-table"></i>
+        </button>
+
+        <button class="floating-btn" aria-label="Calendar">
+          <i class="fa-solid fa-calendar-days"></i>
+        </button>
+      </div>
+    </div>
+
+      <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
